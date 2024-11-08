@@ -14,7 +14,7 @@ Ce projet implémente un garbage descriptor (GD) en C. Ce garbage descriptor est
 - **Initialisation** : 
   - `init_garbage_descriptor` initialise le collecteur avec une capacité initiale.
 
-- **Close un fd** : 
+- **Close fd** : 
   - `close_fd` permet de supprimer un fd spécifique du collecteur. Le FD (descripteur de fichier) est initialisé à -1, ce qui reste présent dans la collection.
 
 - **Debugging** : 
