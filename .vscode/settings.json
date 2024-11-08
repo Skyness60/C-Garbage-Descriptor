@@ -1,0 +1,6 @@
+{
+	"files.associations": {
+		"garbage_descriptor.h": "c",
+		"stdlib.h": "c"
+	}
+}
