@@ -6,7 +6,7 @@
 /*   By: sperron <sperron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 13:35:01 by sperron           #+#    #+#             */
-/*   Updated: 2024/11/08 13:39:54 by sperron          ###   ########.fr       */
+/*   Updated: 2024/11/08 14:19:07 by sperron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ void	close_fd(t_garbage_descriptor *trash_fds, int fd)
 	{
 		if (trash_fds->fds[i] == fd)
 		{
-			close(trash_fds->fds[i]);
+			if (trash_fds->fds[i])
+				close(trash_fds->fds[i]);
 			trash_fds->fds[i] = -1;
 		}
 	}
